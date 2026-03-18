@@ -1,41 +1,13 @@
 # open-model-arena
 
-**Open-source LLM evaluation arena with crowd-sourced human preferences**
+Stub Python project. Described as an open model arena for comparing AI models, but none of that functionality exists.
 
-![Build](https://img.shields.io/badge/build-passing-brightgreen) ![License](https://img.shields.io/badge/license-proprietary-red)
+## What's actually here
 
-## Install
-```bash
-pip install -e ".[dev]"
-```
+A single class in `src/core.py` (OpenModelArena) with placeholder methods that each return a fixed dictionary without doing any real work. There is no model comparison, no benchmarking, no evaluation framework - just stubs.
 
-## Quick Start
-```python
-from src.core import OpenModelArena
- instance = OpenModelArena()
-r = instance.process(input="test")
-```
+The project uses only Python standard library imports (time, logging, json, typing). No ML or evaluation libraries are present.
 
-## CLI
-```bash
-python -m src status
-python -m src run --input "data"
-```
+## Status
 
-## API
-| Method | Description |
-|--------|-------------|
-| `process()` | Process |
-| `analyze()` | Analyze |
-| `transform()` | Transform |
-| `validate()` | Validate |
-| `export()` | Export |
-| `get_stats()` | Get stats |
-| `get_stats()` | Get stats |
-| `reset()` | Reset |
-
-## Test
-```bash
-pytest tests/ -v
-```
-
+Scaffolding only. No working model arena functionality exists.
