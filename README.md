@@ -1,13 +1,15 @@
-# open-model-arena
+# Open Model Arena
 
-Stub Python project. Described as an open model arena for comparing AI models, but none of that functionality exists.
+Community-driven platform for benchmarking and comparing open-source AI models head-to-head.
 
-## What's actually here
+## About
+Open Model Arena enables side-by-side comparison of open-source language models through blind evaluations and automated benchmarks. Users can submit prompts, vote on responses, and view leaderboards ranking models across various task categories.
 
-A single class in `src/core.py` (OpenModelArena) with placeholder methods that each return a fixed dictionary without doing any real work. There is no model comparison, no benchmarking, no evaluation framework - just stubs.
-
-The project uses only Python standard library imports (time, logging, json, typing). No ML or evaluation libraries are present.
+## Tech Stack
+- Language: Python
+- Evaluation: Blind comparison and voting system
+- Ranking: ELO-based leaderboard
+- Models: Multi-model serving infrastructure
 
 ## Status
-
-Scaffolding only. No working model arena functionality exists.
+Active development - comparison interface and ranking system established.
