@@ -1,30 +1,63 @@
-# open-model-arena
+# Open Model Arena
 
-**Open-source LLM evaluation arena with human preferences**
+Open-source LLM evaluation arena with human preferences
 
-## Install
+## Features
+
+- Analytics
+Api
+Arena
+Battle Manager
+Elo Calculator
+Model Registry
+Vote System
+
+## Tech Stack
+
+- **Language:** Python
+- **Framework:** FastAPI
+- **Key Dependencies:** pydantic,fastapi,uvicorn,anthropic,openai,numpy
+- **Containerization:** Docker + Docker Compose
+
+## Getting Started
+
+### Prerequisites
+
+- Python 3.11+
+- Docker & Docker Compose (optional)
+
+### Installation
+
 ```bash
-pip install -e '.[dev]'
+git clone https://github.com/MukundaKatta/open-model-arena.git
+cd open-model-arena
+pip install -r requirements.txt
 ```
 
-## Quick Start
-```python
-from src import __version__
+### Running
+
+```bash
+uvicorn app.main:app --reload
 ```
 
-## Modules
-- **arena**
-- **battle_manager**
-- **elo_calculator**
-- **vote_system**
-- **model_registry**
-- **analytics**
-- **api**
+### Docker
 
-## Docker
 ```bash
-docker compose up
+docker-compose up
+```
+
+## Project Structure
+
+```
+open-model-arena/
+├── src/           # Source code
+├── tests/         # Test suite
+├── Dockerfile
+├── docker-compose.yml
+├── requirements.txt
+└── README.md
 ```
 
 ## License
-(c) 2026 Officethree Technologies. All Rights Reserved.
+
+MIT
